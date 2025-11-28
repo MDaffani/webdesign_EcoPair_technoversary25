@@ -1,6 +1,4 @@
-// Custom JavaScript for EcoEdu
 document.addEventListener('DOMContentLoaded', function() {
-    // Smooth scroll for navigation links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -14,37 +12,33 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Contact form submission
+    // Contact form
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
             
-            // Simple validation
+            // Validasi Elemen
             const name = document.getElementById('name').value;
             const email = document.getElementById('email').value;
             const subject = document.getElementById('subject').value;
             const message = document.getElementById('message').value;
             
             if (name && email && subject && message) {
-                // Show success message (you can replace this with actual form submission)
+                // Menampilkan Pesan Berhasil
                 alert('Terima kasih! Pesan Anda telah berhasil dikirim. Kami akan membalas dalam 1-2 hari kerja.');
                 contactForm.reset();
             }
         });
     }
 
-    // Article filter functionality
+    // Fungsi Filter Artikel
     const filterButtons = document.querySelectorAll('.btn-outline-success');
     filterButtons.forEach(button => {
         button.addEventListener('click', function() {
-            // Remove active class from all buttons
             filterButtons.forEach(btn => btn.classList.remove('active'));
-            // Add active class to clicked button
             this.classList.add('active');
             
-            // Here you would typically filter the articles
-            // For demo purposes, we'll just show an alert
             const filter = this.textContent.trim();
             if (filter !== 'Semua') {
                 alert(`Menampilkan artikel dengan filter: ${filter}`);
@@ -52,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Newsletter subscription
+    // Newsletter
     const newsletterBtn = document.querySelector('.newsletter-section .btn');
     if (newsletterBtn) {
         newsletterBtn.addEventListener('click', function() {
@@ -65,4 +59,5 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+
 });
