@@ -67,10 +67,9 @@ Website berfokus pada edukasi lingkungan dengan subtema:
 
 **GitHub Repository:** `https://github.com/MDaffani/webdesign_EcoPair_technoversary25`
 
-**Live Demo:** `https://MDaffani.github.io/webdesign_namaTim_technoversary25`
-
 ## 📞 Kontak Tim
 
 - **Email**: [muhammaddaffani03@gmail.com]
 - **WhatsApp**: [081318474244]
+
 
